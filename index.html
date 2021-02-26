@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Nome do nosso site - Entrar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css" />
+    </head>
+    <body>
+        <main>
+            
+            <div class="container">
+                <a class="links" id="irCadastro"></a>
+                <a class="links" id="irLogin"></a>
+            
+                <div class="content">
+                    <!--PARTE DE LOGIN-->
+                    <div id="login">
+                        <form method="POST" action="#">
+                            
+                            <h1>Login</h1>
+                            
+                            <p>
+                                <label for="loginUsername">Usuário</label>
+                                <input id="loginUsername" name="loginUsername" type="text" placeholder="Nome de usuário" required>
+                            </p>
+
+                            <p>
+                                <label for="loginSenha">Senha</label>
+                                <input id="loginSenha" name="loginSenha" type="password" placeholder="Sua senha" required>
+                            </p>
+
+                            <p>
+                                <input type="submit" value="Entrar">
+                            </p>
+
+                            <p class="link">
+                                Ainda não é cadastrado?
+                                <a href="#irCadastro">Crie a sua conta agora</a>
+                            </p>
+
+                        </form>
+                    </div>
+
+                    <!--PARTE DE CADASTRO-->
+
+                    <div id="cadastro">
+                        <form method="POST" action="#">
+                            
+                            <h1>Cadastro</h1>
+                            
+                            <p>
+                                <label for="nomeCadastro">Username</label>
+                                <input id="nomeCadastro" name="nomeCadastro" type="text" placeholder="Seu username" required>
+                            </p>
+                            <p>
+                                <label for="emailCadastro">Email</label>
+                                <input id="emailCadastro" name="emailCadastro" type="email" placeholder="Seu email" required>                           
+                            </p>
+                            <p>
+                                <label for="senhaCadastro">Password</label>
+                                <input id="senhaCadastro" name="senhaCadastro" type="senha" placeholder="Sua senha" required>
+                            </p>
+                               
+                            <p>
+                                <input type="submit" value="Criar Conta"/>
+                            </p>
+
+                            <p class="link">
+
+                                Já tem uma conta?
+                                <a href="#irLogin">Fazer login</a>
+
+                            </p>
+
+                        </form>
+                    </div>
+
+                </div>
+            
+            </div>
+
+        </main>
+    </body>
+</html>
